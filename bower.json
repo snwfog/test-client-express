@@ -1,0 +1,19 @@
+{
+  "name": "test-client-express",
+  "version": "0.0.0",
+  "homepage": "https://github.com/snwfog/test-client-express",
+  "authors": [
+    "Charles Yang <donchoa@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "~1.0.6"
+  }
+}
