@@ -1,7 +1,18 @@
 extends layout
 
 block content
-  h2= title
-  p Welcome to #{title}
+  div.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+    header.mdl-layout__header
+      div.mdl-layout__header-row
+        span.mdl.layout-title #{title}
+        div.mdl-layout-spacer
+         nav.mdl-navigation.mdl-layout--large-screen-only
+           a.mdl-navigation__link(href="") Home
+           a.mdl-navigation__link(href="") First
+           a.mdl-navigation__link(href="") Second
+           a.mdl-navigation__link(href="") Third
+    main.mdl-layout__content
+      div.page-content
+       p Hi there
 
-  button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent  Click Me
+
