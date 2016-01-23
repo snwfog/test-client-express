@@ -1,18 +1,16 @@
 extends layout
 
 block content
-  div.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
-    header.mdl-layout__header
+  div.mdl-layout.mdl-js-layout
+    header.mdl-layout__header.mdl-layout__header--scroll
       div.mdl-layout__header-row
-        span.mdl.layout-title #{title}
+        span.mdl-layout__title Test Client Site
         div.mdl-layout-spacer
-         nav.mdl-navigation.mdl-layout--large-screen-only
-           a.mdl-navigation__link(href="") Home
-           a.mdl-navigation__link(href="") First
-           a.mdl-navigation__link(href="") Second
-           a.mdl-navigation__link(href="") Third
+        nav.mdl-navigation
+          a.mdl-navigation__link(href='#') Home
+
     main.mdl-layout__content
-      div.page-content
-       p Hi there
+      p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
 
 
