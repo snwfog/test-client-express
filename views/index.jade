@@ -1,16 +1,26 @@
-extends layout
+extends application
 
 block content
-  div.mdl-layout.mdl-js-layout
-    header.mdl-layout__header.mdl-layout__header--scroll
-      div.mdl-layout__header-row
-        span.mdl-layout__title Test Client Site
-        div.mdl-layout-spacer
-        nav.mdl-navigation
-          a.mdl-navigation__link(href='#') Home
+  main.mdl-layout__content
+    div.mdl-grid
+      div.mdl-cell.mdl-cell--8-col
+        form
+          label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='cs-keep-session')
+            input#cs-keep-session.mdl-radio__button(type='radio' name='cs-keep-session' value='true' checked)
+            span.mdl-radio__label Keep session
+          label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='cs-keep-session')
+            input#cs-generate-new-session.mdl-radio__button(type='radio' name='cs-keep-session' value='false')
+            span.mdl-radio__label Generate new session
 
-    main.mdl-layout__content
-      p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        p Bacon ipsum dolor amet tri-tip hamburger leberkas, pastrami chuck frankfurter kevin ground round ribeye pork belly kielbasa picanha. Turducken hamburger flank shankle. Strip steak chuck sausage ball tip pork belly t-bone drumstick landjaeger meatloaf swine ribeye frankfurter filet mignon. Prosciutto sirloin short ribs ham hock hamburger chuck ground round doner. Pork belly pork loin boudin tenderloin, turkey corned beef sirloin meatball ham beef spare ribs short loin drumstick short ribs.
+        p Fatback short ribs tail tri-tip pork loin, picanha pork belly ham hock strip steak hamburger pancetta kevin rump boudin. Cow strip steak chuck short loin, jowl pork sirloin filet mignon. Bacon porchetta drumstick, rump prosciutto strip steak shank shoulder boudin cow frankfurter t-bone. Turducken andouille capicola drumstick, pork belly sirloin ham hock. Pastrami venison bacon alcatra.
+        p Brisket pig ham, pancetta capicola drumstick beef ribs biltong shankle ham hock. Pastrami ham hock chicken flank chuck hamburger swine kielbasa drumstick landjaeger capicola short loin ham. Short ribs brisket frankfurter, ribeye venison meatloaf beef corned beef drumstick. Beef ribs tail turkey pork loin ribeye cupim, pastrami drumstick shoulder jowl bresaola fatback turducken.
+
+      div.mdl-cell.mdl-cell--4-col
+        p Pig beef ribs swine drumstick. Pork belly alcatra spare ribs, pancetta ground round tail boudin ribeye filet mignon capicola turducken drumstick leberkas beef. Shoulder chuck cupim swine rump alcatra kielbasa jerky boudin porchetta filet mignon flank pork. Pork alcatra pork belly drumstick pork chop beef shoulder corned beef porchetta ham hock kielbasa frankfurter.
+        p Corned beef sirloin doner, picanha tri-tip swine jerky pork. Landjaeger alcatra prosciutto kielbasa, meatloaf pork belly picanha salami pork chop pork beef ribs. Leberkas frankfurter bacon filet mignon, swine sausage cow alcatra bresaola brisket kevin cupim short ribs. Sirloin pork chop kevin brisket ground round fatback corned beef cow leberkas venison doner meatloaf meatball.
+
+
 
 
 

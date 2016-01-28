@@ -14,6 +14,6 @@
     "tests"
   ],
   "dependencies": {
-    "material-design-lite": "~1.0.6"
+    "materialize": "~0.97.5"
   }
 }
